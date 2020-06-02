@@ -4,6 +4,8 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
+// import { useRouter } from 'next/router'
+
 
 export default function Post({
   postData
@@ -14,6 +16,8 @@ export default function Post({
     contentHtml: string
   }
 }) {
+  // const router = useRouter()
+  // console.log(router)
   return (
     <Layout>
       <Head>
